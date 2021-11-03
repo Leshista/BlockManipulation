@@ -86,14 +86,22 @@
                 RGBA
             </h1>
             <div class="control-block__input-area">
-                <input type="range" value="255" id="rgba-r" min="0" max="255" class="control-block__input"><label
-                    for="rgba-r">r</label>
-                <input type="range" value="0" id="rgba-g" min="0" max="255" class="control-block__input"><label
-                    for="rgba-g">g</label>
-                <input type="range" value="0" id="rgba-b" min="0" max="255" class="control-block__input"><label
-                    for="rgba-b">b</label>
-                <input type="range" value="0" id="rgba-a" min="0" max="1" step="0.01"
-                    class="control-block__input"><label for="rgba-a">a</label>
+                <div class="control-block__rgba-range control-block__rgba-range_red">
+                    <input type="range" value="255" id="rgba-r" min="0" max="255" class="control-block__input"><label
+                        for="rgba-r">r</label>
+                </div>
+                <div class="control-block__rgba-range control-block__rgba-range_green">
+                    <input type="range" value="0" id="rgba-g" min="0" max="255" class="control-block__input"><label
+                        for="rgba-g">g</label>
+                </div>
+                <div class="control-block__rgba-range control-block__rgba-range_blue">
+                    <input type="range" value="0" id="rgba-b" min="0" max="255" class="control-block__input"><label
+                        for="rgba-b">b</label>
+                </div>
+                <div class="control-block__rgba-range">
+                    <input type="range" value="1" id="rgba-a" min="0" max="1" step="0.01"
+                        class="control-block__input"><label for="rgba-a">a</label>
+                </div>
             </div>
         </div>
     </header>

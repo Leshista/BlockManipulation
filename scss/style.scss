@@ -34,6 +34,19 @@
     &__input {
         width: 80%;
     }
+    &__rgba-range {
+        display: flex;
+        justify-content: space-around;
+        &_red {
+            color: #ff0000;
+        }
+        &_green {
+            color: #00ff00;
+        }
+        &_blue {
+            color: #0000ff;
+        }
+    }
 }
 .main {
 }
