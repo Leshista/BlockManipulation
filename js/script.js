@@ -61,4 +61,14 @@ window.addEventListener('load', function () {
             movingBlock.style.background = `rgba(${rgbaR.value}, ${rgbaG.value}, ${rgbaB.value}, ${rgbaA.value})`;
         });
     });
+    // Reset
+    let reset = document.querySelector('.reset__button');
+    reset.addEventListener('click', function () {
+        movingBlock.style.top = '0';
+        movingBlock.style.left = '0';
+        movingBlock.style.transform = `scale(1) rotate(0deg)`;
+        movingBlock.style.opacity = '1';
+        movingBlock.style.borderRadius = '100%';
+        movingBlock.style.background = 'radial-gradient(#ff8c00, #800080, #9400d3, #00fa9a, #191970, #7b68ee)';
+    });
 });
