@@ -17,7 +17,7 @@
             </h1>
             <div class="control-block__input-area">
                 <input type="range" value="0" id="position-y" min="0" max="600" class="control-block__input">
-                <label for="position-y">
+                <label for="position-y" class="numeral-label">
                     <span>0</span>
                     <span>600</span>
                 </label>
@@ -28,11 +28,11 @@
                 Position X
             </h1>
             <div class="control-block__input-area">
-                <input type="range" value="0" id="position-x" min="0" max="800" class="control-block__input">
-                <label for="position-x">
+                <label for="position-x" class="numeral-label">
                     <span>0</span>
                     <span>800</span>
                 </label>
+                <input type="range" value="0" id="position-x" min="0" max="800" class="control-block__input">
             </div>
         </div>
         <div class="control-block">
@@ -40,11 +40,11 @@
                 Size
             </h1>
             <div class="control-block__input-area">
-                <input type="range" size="1" id="size" min="0" max="2" step="0.01" class="control-block__input">
-                <label for="size">
+                <label for="size" class="numeral-label">
                     <span>0</span>
                     <span>2</span>
                 </label>
+                <input type="range" size="1" id="size" min="0" max="2" step="0.01" class="control-block__input">
             </div>
         </div>
         <div class="control-block">
@@ -52,19 +52,19 @@
                 Opacity
             </h1>
             <div class="control-block__input-area">
-                <input type="range" value="1" id="opacity" min="0" max="1" step="0.01" class="control-block__input">
-                <label for="opacity">
+                <label for="opacity" class="numeral-label">
                     <span>0</span>
                     <span>1</span>
                 </label>
+                <input type="range" value="1" id="opacity" min="0" max="1" step="0.01" class="control-block__input">
             </div>
         </div>
         <div class="control-block">
             <h1 class="control-block__title">
                 Shape Type
             </h1>
-            <div class="control-block__input-area">
-                <select id="shape-select">
+            <div class="control-block__input-area control-block__input-area_shape">
+                <select id="shape-select" class="control-block__shape-select">
                     <option value="1">Square</option>
                     <option value="2">Circle</option>
                     <option value="3">Rhombus</option>
@@ -76,7 +76,7 @@
             <h1 class="control-block__title">
                 HEX
             </h1>
-            <div class="control-block__input-area control-block__input-area_horizontal">
+            <div class="control-block__input-area control-block__input-area_hex">
                 <label for="hex">#</label>
                 <input type="text" name="" id="hex" class="control-block__input">
             </div>
