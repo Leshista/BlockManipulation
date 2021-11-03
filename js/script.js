@@ -45,4 +45,20 @@ window.addEventListener('load', function () {
             movingBlock.style.borderRadius = '100%';
         }
     });
+    // HEX
+    let hex = document.querySelector('#hex');
+    hex.addEventListener('keyup', function () {
+        movingBlock.style.background = '#' + hex.value;
+    });
+    // RGBA
+    let rgbaR = document.querySelector('#rgba-r');
+    let rgbaG = document.querySelector('#rgba-g');
+    let rgbaB = document.querySelector('#rgba-b');
+    let rgbaA = document.querySelector('#rgba-a');
+    let rgbaContainer = document.querySelectorAll('.control-block__rgba-range');
+    rgbaContainer.forEach(function (e) {
+        e.addEventListener('input', function () {
+            movingBlock.style.background = `rgba(${rgbaR.value}, ${rgbaG.value}, ${rgbaB.value}, ${rgbaA.value})`;
+        });
+    });
 });
