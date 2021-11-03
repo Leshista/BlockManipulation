@@ -17,14 +17,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: inset 4px 4px 20px 4px #333;
     &__title {
         font-size: 1.5rem;
+        &_rgba {
+            margin-bottom: 0.5rem;
+        }
     }
 
     &__input-area {
+        width: 70%;
         display: flex;
         align-items: center;
         flex-direction: column;
+        &_vertical {
+            display: flex;
+            flex-direction: row;
+        }
         &_shape {
             margin-top: 0.2rem;
         }
@@ -37,7 +46,10 @@
     }
 
     &__input {
-        width: 80%;
+        width: 90%;
+        &_vertical {
+            transform: rotate(90deg);
+        }
         &_hex {
             width: 60%;
         }
@@ -62,6 +74,11 @@
 .numeral-label {
     display: flex;
     justify-content: space-between;
+    width: 4.7rem;
+    &_vertical {
+        flex-direction: column;
+        height: 3.8rem;
+    }
 }
 .main {
 }
