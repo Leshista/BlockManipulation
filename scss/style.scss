@@ -11,7 +11,8 @@
     text-shadow: 1px 1px 1px #000;
 }
 .control-block {
-    max-width: 9rem;
+    width: 10rem;
+    height: 10rem;
     background: linear-gradient(180deg, #696969, #a9a9a9, #696969);
     border-radius: 6px;
     display: flex;
@@ -104,3 +105,11 @@
         font-size: 1.5rem;
     }
 }
+@media (max-width: 76.8em) {
+    .header {
+        flex-wrap: wrap;
+    }
+    .control-block {
+        margin-bottom: 2rem;
+    }
+} ;
