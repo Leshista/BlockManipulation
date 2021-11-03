@@ -81,6 +81,12 @@
     }
 }
 .main {
+    margin: 2rem auto;
+    max-width: 80rem;
 }
 .moving-block {
+    width: 15rem;
+    height: 15rem;
+    background: radial-gradient(#ff8c00, #800080, #9400d3, #00fa9a, #191970, #7b68ee);
+    border-radius: 100%;
 }
